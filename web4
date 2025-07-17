@@ -1,0 +1,6 @@
+ headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ task })
+        }).then(() => {
+          taskInput.value = '';
+          loadTasks();
+        });
