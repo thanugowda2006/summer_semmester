@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <style>
+    body { font-family: Arial; margin: 20px; background: #f4f4f4; }
+    #taskInput { padding: 10px; width: 300px; }
+    #addBtn { padding: 10px; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 10px; background: #fff; margin-top: 5px; }
+  </style>
+</head>
