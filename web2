@@ -1,0 +1,17 @@
+ <script>
+    const taskInput = document.getElementById('taskInput');
+    const addBtn = document.getElementById('addBtn');
+    const taskList = document.getElementById('taskList');
+
+    function loadTasks() {
+      fetch('/tasks')
+        .then(res => res.json())
+        .then(tasks => {
+          taskList.innerHTML = '';
+          tasks.forEach(task => {
+            const li = document.createElement('li');
+            li.textContent = task;
+            taskList.appendChild(li);
+          });
+        });
+    }
